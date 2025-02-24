@@ -1,0 +1,10 @@
+# Update tuple by a user given input
+a=(7,3,9)
+print(a)
+b=list(a)
+print(b)
+num=int(input("Enter a number: "))
+b.append(num)
+print(b)
+c=tuple(b)
+print(c)
