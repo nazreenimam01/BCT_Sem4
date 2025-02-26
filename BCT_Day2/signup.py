@@ -1,6 +1,5 @@
 L=[]
 def signup():
-    a={}
     email=input("Enter your email:")
     password=input("Enter your password:")
     a={"Email:":email,"Password:":password}
