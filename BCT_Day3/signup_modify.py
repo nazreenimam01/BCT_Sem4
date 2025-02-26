@@ -1,3 +1,5 @@
+# PrettyTable and endswith() function is included in the login interface program
+
 from prettytable import PrettyTable
 table=PrettyTable()
 L=[]
@@ -18,19 +20,18 @@ def check():
         p=input("Enter your password:")
         for i in range(len(L)):
             if(em.endswith("gmail.com")):
-               if(L[i]['Email:']!=em):
-                   print("Email is not registered, please SignUp first.")
-                   return
-               else:
-                   if(L[i]['Password:']!=p):
-                       print("Incorrect password.")
+               if(L[i]['Email:']==em):
+                    if(L[i]['Password:']==p):
+                       print("Login successful.")
                        return
-                   else:
-                       print("Log in successful.")
+                    else:
+                       print("Incorrect password.")
                        return
             else:
                 print("Email format is not valid. Please enter correct email.")
                 return
+        print("Email is not registered, please SignUp first.")
+        return
 
 def show():
     table.field_names = ["Email", "Password"]
