@@ -12,18 +12,17 @@ def signup():
 def check():
     em=input("Enter your email:")
     p=input("Enter your password:")
-    n=len(L)
-    for i in range(n):
-        if L[i]['Email:']!=em:
-            print("Email is not registered, please SignUp first.")
-            return
-        else:
-            if L[i]['Password:']!=p:
+    for i in range(len(L)):
+        if L[i]['Email:']==em:
+            if L[i]['Password:']==p:
+                print("Login successful.")
+                return 
+            else:
                 print("Incorrect password.")
                 return
-            else:
-                print("Log in successful.")
-                return
+        
+    print("Email is not registered, please SignUp first.")
+    return
            
 def main():
     while True:
