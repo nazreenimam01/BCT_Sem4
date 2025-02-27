@@ -42,17 +42,4 @@ def show():
     print(table)
     table.clear()
 
-def main():
-    while True:
-       c=str(input("Do you want to SignUp? (Yes/No):"))
-       if(c.lower()=="yes"):
-          signup()
-       d=str(input("Do you want to SignIn? (Yes/No):"))
-       if(d.lower()=="yes"):
-          check()
-       e=str(input("Do you want to see database? (Yes/No):"))
-       if(e.lower()=="yes"):
-          show()
 
-if __name__=="__main__":
-    main()
