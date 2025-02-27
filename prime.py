@@ -4,7 +4,7 @@ if(num==1):
     print("1 is neither prime nor composite")
 else:
     for i in range(1,num+1):
-        if(num%i==0):
+        if num%i==0:
             c+=1
             i+=1
     if(c==2):
