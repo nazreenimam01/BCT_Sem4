@@ -14,7 +14,7 @@ def check():
     for i in range(len(L)):
         if L[i]['Email:']==em:
             if L[i]['Password:']==p:
-                print("Login successful.")
+                print("SignIn successful.")
                 return 
             else:
                 print("Incorrect password.")
