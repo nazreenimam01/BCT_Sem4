@@ -7,8 +7,5 @@ print(s[-5:8:-1])
 print(s[len(s)::-1])
 print(s[20:0:-1])
 print(s[13::1])
-<<<<<<< HEAD
 print(s[13::-1])
-=======
-print(s[13::-1])
->>>>>>> 212b5b6214559a0197d6d871dee208555d24ace4
+
